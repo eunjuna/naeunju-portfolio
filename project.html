@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 나은주 포트폴리오 사이트 </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="project.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="contents">
+
+
+            <!-- one : 첫번째 컨텐츠 -->
+            <section class="one">
+
+                <div class="con">
+                    <img src="./img/mac-1.png" alr="베네피트 목업">
+
+                    <div class="con-txt">
+                        <b> 베네피트 코스메틱 코리아 </b> <br>
+                            <div class="con-box">
+                                <div class="con-box1">
+                                    <span> 제작기간 </span>  <br>
+                                    <span> 기여도 </span>  <br>
+                                    <span> 사용언어 </span>
+                                </div>
+                                <div class="con-box2">
+                                    <span> 1주 </span> <br>
+                                    <span> 100% 개인작업 </span> <br>
+                                    <span> Photoshop, Illustrator, Pigma </span>
+                                </div>
+                            </div>
+                        <a href="./project_1-1.html" target="_blank"> 자세히보기 </a>
+                    </div>
+                </div>
+
+                    <div class="btn-1">
+                        <a href="./index.html"> ← 메인으로 </a>
+                    </div>
+            </section>
+
+            
+            <!-- two : 두번째 컨텐츠 -->
+            <section class="two">
+
+                <div class="con2">
+                    <img src="./img/mac-2.png" alr="펫트너 목업">
+
+                    <div class="con-txt2">
+                        <b> 펫트너 건강검진센터 </b> <br>
+                            <div class="conbox">
+                                <div class="con-box3">
+                                    <span> 제작기간 </span>  <br>
+                                    <span> 기여도 </span>  <br>
+                                    <span> 사용언어 </span>
+                                </div>
+                                <div class="con-box4">
+                                    <span> 2주 </span> <br>
+                                    <span> 팀작업 (디자인파트 기여도 100%) </span> <br>
+                                    <span> Photoshop, Illustrator, Pigma, <br>
+                                        HTML, CSS5, SCSS, Javascript, JQuery </span>
+                                </div>
+                            </div>
+                        <a href="./project_2-1.html" target="_blank"> 자세히보기 </a>
+                    </div>
+                </div>
+
+                    <div class="btn-1">
+                        <a href="./index.html"> ← 메인으로 </a>
+                    </div>
+
+            </section>
+
+            <section class="three">
+                <div class="ps">
+                    <img src="./img/ps.jpg" alr="필로소피아">
+                </div>
+                <div class="btn-1">
+                    <a href="./index.html"> ← 메인으로 </a>
+                </div>
+            </section>
+
+            <section class="four">
+                <div class="air">
+                    <img src="./img/air.jpg" alr="에어릿">
+                </div>
+                <div class="btn-1">
+                    <a href="./index.html"> ← 메인으로 </a>
+                </div>
+            </section>
+
+            <section class="five">
+                <div class="mar">
+                    <img src="./img/banner.jpg" alr="배너디자인">
+                </div>
+            <div class="btn-1">
+                <a href="./index.html"> ← 메인으로 </a>
+            </div>
+            </section>
+
+            <section class="six">
+                <div class="aven">
+                    <img src="./img/avengers.jpg" alr="어벤져스 헬리케리어">
+                </div>
+            <div class="btn-1">
+                <a href="./index.html"> ← 메인으로 </a>
+            </div>
+            </section>
+
+        </div>
+    </main>
+
+    <aside>
+        <div class="first">
+            <b>UX/UI DESIGN</b><br>
+            <div class="firbox">
+                <a class="active" data-num="0">01. 베네피트 코스메틱 코리아</a><br>
+                <a data-num="1">02. 펫트너 건강검진센터</a><br>
+            </div>
+        </div>
+        <div class="second">
+            <b>BRAND WEB DESIGN</b><br>
+            <div class="secbox">
+                <a data-num="2">01. 필로소피아</a><br>
+                <a data-num="3">02. 에어릿</a><br>
+            </div>
+        </div>
+        <div class="third">
+            <b>GRAPHIC DESIGN</b><br>
+            <div class="thbox">
+                <a data-num="4">01. 배너 디자인</a><br>
+                <a data-num="5">02. 어도비 일러스트</a><br>
+            </div>
+        </div>
+    </aside>
+
+    <style>
+        
+        body{
+            margin:0
+        }
+        main{
+            position:fixed; left:0; top:0;
+            width:100%; height:100%;
+        }
+        main .contents{ transition: 1s; }
+
+        section {
+            height: 100vh;
+            /* font-size: 5rem; */
+            display: flex; justify-content: center; align-items: center;
+        }
+        section:nth-child(odd){background-color: #eee;}
+        aside{
+            position:fixed; left:5%; top:26%;
+        }
+        .aside a{
+            width:200px; height:200px;
+            border:1px solid #000;
+            border-radius: 50%;
+            display: block;
+        }
+        a.active{font-weight: 500;}
+        ::-webkit-scrollbar{
+            display: none;
+        }
+
+    </style>
+    
+
+    <script>
+        const domHeight =  $('.contents').height();
+        $('html').height(domHeight);
+
+        
+
+       
+        let idx = 0, play, offsetTop=[];
+        let scrollState = {y:0,y2:0,state:'down'}
+
+        setTimeout(()=>{
+            offsetTop = [
+                $('section').eq(0).offset().top,
+                $('section').eq(1).offset().top,
+                $('section').eq(2).offset().top,
+                $('section').eq(3).offset().top,
+                $('section').eq(4).offset().top,
+                $('section').eq(5).offset().top
+            ];
+          
+
+            $(window).on('scroll',function(){
+                scrollState.y = $(window).scrollTop();
+
+                /* 조건문 */
+                if(scrollState.y > scrollState.y2){
+                    scrollState.state = true;  
+                }else{
+                    scrollState.state = false;
+                }
+
+                /* 클리어타임과 셋타임 */
+                clearTimeout(play);
+                play = setTimeout(function(){
+
+                    if(scrollState.state){
+                        if(idx<5) idx++;
+                    }else{
+                        if(idx>0) idx--;
+                    }
+                    console.log(idx)
+                    
+                    $('.contents').css({
+                        transform:`translateY(-${offsetTop[idx]}px)`
+                    });
+
+                    $('aside a').removeClass('active')
+                    .eq(idx).addClass('active');
+
+                },50);            
+
+                scrollState.y2 = scrollState.y;
+
+                /*
+                스크롤양,
+                브라우저 높이,
+                문서 높이,
+                명령을 줄 콘텐츠의 위치값
+                */
+
+            })
+
+
+            //좌측메뉴 클릭
+            $('aside div a').on('click',function(){
+                event.preventDefault();
+                idx = $(this).data('num');
+                
+                $('aside div a').removeClass('active');
+                $(this).addClass('active');
+
+                $('.contents').css({
+                    transform:`translateY(-${offsetTop[idx]}px)`
+                });
+            })
+        
+        },1000)
+    
+
+        
+
+       
+    </script>
+
+
+
+</body>
+
+</html>
